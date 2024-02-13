@@ -152,10 +152,15 @@ class _LoginViewState extends State<LoginView> {
                     "Don't have an account?",
                     style: TextStyle(color: Colors.grey),
                   ),
-              
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    'Sign up',
+                    style: TextStyle(color: Color.fromARGB(255, 90, 184, 158)),
+                  )
                 ],
               )
-
             ],
           ),
         ),
