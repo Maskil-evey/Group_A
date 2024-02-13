@@ -144,6 +144,18 @@ class _LoginViewState extends State<LoginView> {
                       fontWeight: FontWeight.w500),
                 ),
               ),
+              const Spacer(),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Don't have an account?",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+              
+                ],
+              )
+
             ],
           ),
         ),
@@ -151,3 +163,4 @@ class _LoginViewState extends State<LoginView> {
     );
   }
 }
+
