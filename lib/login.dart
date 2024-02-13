@@ -113,6 +113,26 @@ class _LoginViewState extends State<LoginView> {
                   ),
                 ],
               ),
+               const SizedBox(
+                height: 10,
+              ),
+              Container(
+                width: double.infinity,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                      shadowColor: Color.fromARGB(255, 90, 184, 158),
+                      elevation: 5,
+                      backgroundColor: Color.fromARGB(255, 90, 184, 158),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5))),
+                  child: const Text(
+                    'Sign in',
+                    style: TextStyle(color: Colors.white, fontSize: 15),
+                  ),
+                ),
+              ),
 
             ],
           ),
