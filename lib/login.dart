@@ -10,6 +10,8 @@ class LoginView extends StatefulWidget {
 
 class _LoginViewState extends State<LoginView> {
   var isVisible = true;
+  var isChecked = false;
+
 
   @override
   Widget build(BuildContext context) {
@@ -92,6 +94,26 @@ class _LoginViewState extends State<LoginView> {
               const SizedBox(
                 height: 5,
               ),
+                 Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Checkbox(
+                    activeColor: Color.fromARGB(255, 90, 184, 158),
+                    value: isChecked,
+                    onChanged: (value) {
+                      setState(() {
+                        isChecked = value!;
+                      });
+                    },
+                  ),
+                  Text(
+                    'Remember me',
+                    style: GoogleFonts.roboto(
+                        fontSize: 13, fontWeight: FontWeight.w500),
+                  ),
+                ],
+              ),
+
             ],
           ),
         ),
