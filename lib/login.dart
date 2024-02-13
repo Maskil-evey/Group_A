@@ -12,7 +12,6 @@ class _LoginViewState extends State<LoginView> {
   var isVisible = true;
   var isChecked = false;
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,7 +93,7 @@ class _LoginViewState extends State<LoginView> {
               const SizedBox(
                 height: 5,
               ),
-                 Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Checkbox(
@@ -113,7 +112,7 @@ class _LoginViewState extends State<LoginView> {
                   ),
                 ],
               ),
-               const SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
@@ -133,7 +132,18 @@ class _LoginViewState extends State<LoginView> {
                   ),
                 ),
               ),
-
+              const SizedBox(
+                height: 15,
+              ),
+              const Center(
+                child: Text(
+                  'Forgot the password',
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 90, 184, 158),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500),
+                ),
+              ),
             ],
           ),
         ),
